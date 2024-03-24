@@ -1,0 +1,45 @@
+:root {
+    --my-padding:0,4rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    color: rgb(174, 77, 77);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "header menu"
+    "hero"
+    "main image "
+    "banner"
+    ;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header{
+    background-color: rgb(190, 119, 119);
+    display: grid;
+    grid-area: header;
+    padding: var(--my-padding)
+}
+
+main{
+    align-items: center;
+    background-color: royalblue;
+    display: grid;
+    grid-area: main;
+    padding: var(--my-padding);
+} 
+
+.menu{
+    background-color: brown;
+    grid-area: menu;
+}
